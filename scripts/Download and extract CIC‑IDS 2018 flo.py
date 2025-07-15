@@ -1,5 +1,22 @@
 """Download and extract CIC‑IDS 2018 flows as CSV.
 Run: python scripts/download_cicids.py --dest datasets/cicids2018
+
+Download manually from Kaggle:
+
+Login to https://www.kaggle.com
+
+Go to: CICIDS2018 on Kaggle
+
+Download and unzip under: datasets/cicids2018
+
+Update your notebook path:
+
+# If needed, change file path below after manual extraction
+path = "../datasets/cicids2018/Friday-02-03-2018_TrafficForML_CICFlowMeter.csv"
+
+Continue with the notebook: notebooks/01_explore_cicids.ipynb
+
+
 """
 import argparse, hashlib, pathlib, tarfile, urllib.request, sys
 
